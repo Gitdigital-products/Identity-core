@@ -1,0 +1,13 @@
+
+Packages
+
+@gitdigital/wallets
+
+Secure key management with multi-chain support.
+
+```typescript
+import { WalletManager } from '@gitdigital/wallets';
+
+const wallet = new WalletManager();
+const account = await wallet.createAccount('ethereum');
+const signature = await wallet.signMessage(account, 'Hello World');
