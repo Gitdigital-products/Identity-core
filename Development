@@ -1,0 +1,14 @@
+# Setup development environment
+npm run prepare
+
+# Run tests
+npm run test
+
+# Run linter
+npm run lint
+
+# Build all packages
+npm run build
+
+# Watch mode for development
+npm run dev
