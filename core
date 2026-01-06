@@ -1,0 +1,10 @@
+import { IdentityCore } from '@gitdigital/core';
+
+const identity = new IdentityCore({
+  wallet: { provider: 'infura', apiKey: '...' },
+  did: { methods: ['ethr', 'key'] }
+});
+
+// Unified interface
+const user = await identity.createUser();
+const credential = await identity.issueCredential(user, claim);
