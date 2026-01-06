@@ -1,0 +1,47 @@
+{
+  "name": "gitdigital-identity-core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Digital Identity Core - Wallets, OAuth, DID abstraction",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "dev": "lerna run dev --parallel",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "clean": "lerna run clean",
+    "prepare": "husky install",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "husky": "^8.0.0",
+    "jest": "^29.5.0",
+    "lerna": "^7.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "digital-identity",
+    "wallets",
+    "oauth",
+    "did",
+    "decentralized-identity",
+    "verifiable-credentials"
+  ],
+  "author": "GitDigital",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
