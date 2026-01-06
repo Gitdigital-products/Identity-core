@@ -1,0 +1,5 @@
+import { DIDManager } from '@gitdigital/did';
+
+const didManager = new DIDManager();
+const did = await didManager.create('ethr');
+const document = await didManager.resolve(did);
