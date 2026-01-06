@@ -1,0 +1,11 @@
+
+@gitdigital/oauth
+
+OAuth 2.0 and OpenID Connect server implementation.
+
+```typescript
+import { OAuthServer } from '@gitdigital/oauth';
+
+const oauth = new OAuthServer({
+  clients: [{ clientId: 'your-app', grants: ['authorization_code'] }]
+});
