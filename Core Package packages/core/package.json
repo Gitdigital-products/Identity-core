@@ -1,0 +1,30 @@
+{
+  "name": "@gitdigital/core",
+  "version": "1.0.0",
+  "description": "Core SDK for GitDigital Identity",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@gitdigital/wallets": "^1.0.0",
+    "@gitdigital/oauth": "^1.0.0",
+    "@gitdigital/did": "^1.0.0",
+    "@gitdigital/types": "^1.0.0",
+    "reflect-metadata": "^0.1.13",
+    "class-validator": "^0.14.0",
+    "class-transformer": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["identity", "digital-identity", "authentication", "authorization"],
+  "author": "GitDigital",
+  "license": "MIT"
+}
