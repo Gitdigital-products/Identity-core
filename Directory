@@ -1,0 +1,20 @@
+gitdigital-identity-core/
+├── package.json
+├── tsconfig.json
+├── .env.example
+├── .gitignore
+├── README.md
+├── LICENSE
+├── docker-compose.yml
+├── Dockerfile
+├── jest.config.js
+├── lerna.json
+├── packages/
+│   ├── core/
+│   ├── wallets/
+│   ├── oauth/
+│   ├── did/
+│   ├── types/
+│   └── cli/
+├── examples/
+└── docs/
